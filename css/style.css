@@ -249,7 +249,9 @@ hr {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	background: linear-gradient(to right, #002845 0%, #005b75 100%);
+	/* background: linear-gradient(to right, #002845 0%, #005b75 100%); */
+	background: linear-gradient(to right, #01c6ff 0%, #0070c1 100%);
+	
 	content: "";
 	transition: width 0.2s;
 }
@@ -489,7 +491,8 @@ header .intro-text {
 
 /* Services Section */
 #features,
-#services {
+/* #services, */
+#about {
 	/* Without these the particles sits on top */
 	position: relative;
 	z-index: 9999;
@@ -703,7 +706,7 @@ header .intro-text {
 	z-index: 9999;
 	position: relative;
 	padding: 100px 0 60px;
-	background: linear-gradient(to right, #002845 0%, #005b75 100%);
+	/* background: linear-gradient(to right, #002845 0%, #005b75 100%); */
 	color: rgba(255, 255, 255, 0.75);
 }
 

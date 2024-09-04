@@ -13,14 +13,16 @@ body.light-mode {
 }
 
 .logo {
-  // background-image: url("https://racetruck.com.ar/img/RaceTruck_LogoOriginal_r.png");
-  width: 50px;
+  background-image: url("/img/phyros.png");
+  width: 40px;
   background-repeat: no-repeat;
-  background-size: 50px;
+  background-size: 40px;
+  background-position-y: center;
+  background-position-x: center;
 }
 
 .headerLogoBlack {
-  // background: url("https://racetruck.com.ar/img/RaceTruck_LogotipoOriginal_r.png");
+  background: url("/img/fullName.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 500px;
@@ -29,7 +31,7 @@ body.light-mode {
 }
 
 .headerLogoWhite {
-  // background: url("https://racetruck.com.ar/img/RaceTruck_LogotipoBlanco_r.png");
+  background: url("/img/fullName.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 500px;
@@ -39,7 +41,7 @@ body.light-mode {
 
 @media (max-width: 500px) {
   .headerLogoBlack {
-    // background: url("https://racetruck.com.ar/img/RaceTruck_LogotipoOriginal_r.png");
+    background: url("/img/phyros.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 300px;
@@ -48,7 +50,7 @@ body.light-mode {
   }
 
   .headerLogoWhite {
-    // background: url("https://racetruck.com.ar/img/RaceTruck_LogotipoBlanco_r.png");
+    background: url("/img/fullName.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 300px;
@@ -92,10 +94,12 @@ body.dark-mode {
   }
 
   .logo {
-    // background-image: url("https://racetruck.com.ar/img/RaceTruck_LogoBlanco_r.png");
-    width: 50px;
+    background-image: url("/img/phyros.png");
+    width: 40px;
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 40px;
+    background-position-y: center;
+    background-position-x: center;
   }
 
   .cards {
