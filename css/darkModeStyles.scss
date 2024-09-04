@@ -1,0 +1,378 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.logo {
+  // background-image: url("https://racetruck.com.ar/img/RaceTruck_LogoOriginal_r.png");
+  width: 50px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.headerLogoBlack {
+  // background: url("https://racetruck.com.ar/img/RaceTruck_LogotipoOriginal_r.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  height: 224px;
+  display: "";
+}
+
+.headerLogoWhite {
+  // background: url("https://racetruck.com.ar/img/RaceTruck_LogotipoBlanco_r.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  height: 0px;
+  display: "";
+}
+
+@media (max-width: 500px) {
+  .headerLogoBlack {
+    // background: url("https://racetruck.com.ar/img/RaceTruck_LogotipoOriginal_r.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    height: 224px;
+    display: "";
+  }
+
+  .headerLogoWhite {
+    // background: url("https://racetruck.com.ar/img/RaceTruck_LogotipoBlanco_r.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    height: 0px;
+    display: "";
+  }
+
+  .sponsor img{
+    width: 150px !important;
+    height: 26px !important;
+  }
+}
+
+#products {
+  .hover-text {
+    padding: 80% 0 0;
+  }
+}
+  
+.dropdownCountrySelection button{
+  background: transparent;
+  color: #555;
+}
+
+body.dark-mode {
+  background-color: #10171d;
+  color: #dfdfdf !important;
+
+  .dropdownCountrySelection button{
+    background: transparent;
+    color: white;
+  }
+
+  .headerLogoBlack {
+    display: none;
+  }
+
+  .headerLogoWhite {
+    display: "";
+    height: 224px;
+  }
+
+  .logo {
+    // background-image: url("https://racetruck.com.ar/img/RaceTruck_LogoBlanco_r.png");
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+  }
+
+  .cards {
+    background-color: #30323d !important;
+  }
+
+  .timeline-card-content {
+    background-color: #1b2938 !important;
+    color: white;
+  }
+
+  .timeline-card-content > span {
+    background-color: #1b2938 !important;
+    color: white;
+  }
+
+  .row-title-text {
+    color: white;
+  }
+
+  .rs-modal-title {
+    color: white;
+  }
+
+  .rs-modal-content {
+    background: #10171d;
+    color: white;
+  }
+
+  .faq-row-wrapper {
+    background-color: transparent;
+  }
+
+  .arrow-image {
+    background: #005b75;
+    border-radius: 100%;
+  }
+
+  .row-content-text {
+    color: white !important;
+  }
+
+  #footer {
+    background: rgba(0, 91, 117, 0.2);
+  }
+
+  .rc-card-text > p {
+    color: white;
+  }
+
+  .intro-text > h1 {
+    color: black !important;
+  }
+
+  #root > div > div {
+    background-color: #10171d;
+    color: white;
+  }
+
+  .intro-text > p {
+    color: black !important;
+  }
+
+  .navbar-nav > li > a {
+    color: white !important;
+  }
+  .navbar-brand {
+    color: white !important;
+  }
+  .navbar {
+    background-color: #1b2938 !important;
+    color: white !important;
+  }
+
+  .dark-mode-toggle > button {
+    color: #999;
+    &:last-child {
+      color: lightblue;
+    }
+  }
+}
+
+/*
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: #95d3ff;
+  padding: 20px;
+}
+*/
+.content {
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 1.3em;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  code {
+    background-color: #cbe9ff;
+    border-radius: 2px;
+    font-size: 1em;
+    padding: 0 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #006688;
+  }
+
+  button {
+    color: #006688;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    padding: 0;
+  }
+}
+
+body.dark-mode .content code {
+  background-color: #1b2938;
+}
+
+body.dark-mode .content a {
+  color: #ee09;
+}
+
+body.dark-mode .content button {
+  color: #ee09;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  left: 10px;
+  top: 0px;
+  & > button {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: #ffe600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:last-child {
+      color: #666;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.dark-mode-toggle {
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  left: 10px;
+  top: 0px;
+  & > button {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:last-child {
+      color: #666;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.toggle-control {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  top: -2px;
+}
+
+input[type="checkbox"].dmcheck {
+  width: 40px;
+  height: 10px;
+  background: #555;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+
+  &:checked + label {
+    left: 30px;
+  }
+
+  &:focus-visible {
+    outline: solid 2px white;
+  }
+
+  & + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    background: #fff;
+    opacity: 0.9;
+    background-color: #b5b5b5;
+    margin: 0;
+    top: 13px;
+    opacity: 1;
+  }
+}
+
+.languageSwitcher {
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle, #dfffdb 50%, white 50%);
+  background-position-y: -390px;
+  margin: auto 0;
+  background-size: 100% 800px;
+  background-repeat: no-repeat;
+}
+
+.lang {
+  display: flex;
+  height: 40px;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* margin-bottom: 40px; */
+  gap: 10px;
+  /* top: 26px; */
+  position: relative;
+  /* right: 26px; */
+  width: 100px;
+  float: right;
+  .dropdown {
+    position: relative;
+    left: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.lang:hover {
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+      margin: 0;
+      display: block;
+      padding: 5px 0;
+    }
+  }
+}
